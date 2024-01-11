@@ -37,14 +37,9 @@ class ItemService :
         # if not item:
         #     raise ItemNotFoundException
 
-        # this is causing an exception - why?
-        item = Item('test', 1.0, True)
+        item = Item(id=item_id, name='fer', price=12.5, is_offer=True)
 
-        print('fer item')
-
-        return {
-            "id": item_id,
-        }
+        return item
 
     # async def update_item(
     #     self, item_id: int, name: str, price: float, is_offer: bool
